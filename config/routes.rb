@@ -1,6 +1,9 @@
 Sunrise::Application.routes.draw do
   get "index/index"
-
+  match 'auth/instagram', to: 'sessions#create'
+  match '/oauth/callback', to: 'sessions#callback'
+  match 'signout', to: 'sessions#destroy', as: 'signout'
+  root to: 'index#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

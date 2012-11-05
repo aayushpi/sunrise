@@ -1,4 +1,8 @@
 <header>
   <h1>Good Morning</h1>
-  <p>Connect with Instagram</p>
+  <% if session[:user_id] %>
+    <%= link_to "Sign Out", 'signout' %> 
+  <% else %>
+    <%= link_to "Connect with Instagram", '/auth/instagram' %>
+  <% end %>
 </header>
