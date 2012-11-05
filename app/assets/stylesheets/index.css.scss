@@ -1,3 +1,32 @@
 // Place all the styles related to the index controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #F2F2F2;
+  font-family: league-gothic, sans-serif;
+}
+
+header{
+  width: 600px;
+  margin: 200px auto 0 auto;
+  text-align: center;
+  padding-bottom: 150px;
+  background: url('sunrise-logo.png') no-repeat bottom;
+}
+h1{
+  
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 72px;
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+}
