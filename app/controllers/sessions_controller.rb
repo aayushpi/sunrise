@@ -21,6 +21,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
+    client = Instagram.client(:access_token => nil)
     reset_session
     redirect_to :controller => 'index', :action => 'index'
   end
